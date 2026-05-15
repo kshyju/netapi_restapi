@@ -5,7 +5,7 @@
 		"version": "[4.*, 5.0.0)"
 	},
 	"customHandler": {
-		"enableHttpProxyingRequest": true,
+		"enableForwardingHttpRequest": true,
 		"description": {
 			"defaultExecutablePath": "netapi_restapi.exe"
 		},
