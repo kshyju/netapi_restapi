@@ -1,6 +1,7 @@
-@netapi_restapi_HostAddress = http://localhost:5250
+@netapi_restapi_HostAddress = http://localhost:7071
 
-GET {{netapi_restapi_HostAddress}}/weatherforecast/
-Accept: application/json
+GET {{netapi_restapi_HostAddress}}/api/items
 
-###
+
+### Products
+GET {{netapi_restapi_HostAddress}}/api/products
