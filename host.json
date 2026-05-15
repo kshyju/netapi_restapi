@@ -1,0 +1,30 @@
+{
+	"version": "2.0",
+	"extensionBundle": {
+		"id": "Microsoft.Azure.Functions.ExtensionBundle",
+		"version": "[4.*, 5.0.0)"
+	},
+	"customHandler": {
+		"enableHttpProxyingRequest": true,
+		"description": {
+			"defaultExecutablePath": "netapi_restapi.exe"
+		},
+		"http": {
+			"routes": [
+				{
+					"route": "api/items",
+					"authorizationLevel": "anonymous"
+				},
+				{
+					"route": "products",
+					"authorizationLevel": "anonymous"
+				}
+			]
+		}
+	},
+	"extensions": {
+		"http": {
+			"routePrefix": ""
+		}
+	}
+}

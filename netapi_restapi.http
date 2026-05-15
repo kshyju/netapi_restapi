@@ -1,0 +1,6 @@
+@netapi_restapi_HostAddress = http://localhost:5250
+
+GET {{netapi_restapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
